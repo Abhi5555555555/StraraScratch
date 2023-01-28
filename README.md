@@ -1,5 +1,5 @@
 # StraraScratch
-Find distinct searches for Los Angeles neighborhoods. Output neighborhoods and remove duplicates.(SQL)
+------Q)Find distinct searches for Los Angeles neighborhoods. Output neighborhoods and remove duplicates.(SQL)
 Find searches for Los Angeles neighborhoods.
 
 Table: airbnb_search_details
