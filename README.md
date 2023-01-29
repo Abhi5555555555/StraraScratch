@@ -265,3 +265,55 @@ int
 
 solution:-
 select * from airbnb_search_details where property_type in ('Villa','House') and amenities like '%Wireless Internet%';
+
+-------Q)Find the total number of searches for houses Westlake neighborhood with a TV
+Find the total number of searches for houses in Westlake neighborhood with a TV among the amenities.
+
+Table: airbnb_search_details
+Approach Hints
+Expected Output
+airbnb_search_details
+Preview
+id:
+int
+price:
+float
+property_type:
+varchar
+room_type:
+varchar
+amenities:
+varchar
+accommodates:
+int
+bathrooms:
+int
+bed_type:
+varchar
+cancellation_policy:
+varchar
+cleaning_fee:
+bool
+city:
+varchar
+host_identity_verified:
+varchar
+host_response_rate:
+varchar
+host_since:
+varchar
+neighbourhood:
+varchar
+number_of_reviews:
+int
+review_scores_rating:
+float
+zipcode:
+int
+bedrooms:
+int
+beds:
+int
+
+SOLUTION:-
+select count(id) from airbnb_search_details where amenities like'%TV%' and neighbourhood = 'Westlake';
