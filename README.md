@@ -366,3 +366,28 @@ SELECT hotel_name, reviewer_score, count(*) as cnts
 from hotel_reviews
 where hotel_name = 'Hotel Arena'
 group by 1,2;
+
+----------
+Q)Find all workers whose first name contains 6 letters and also ends with the letter 'h'
+Find all workers whose first name contains 6 letters and also ends with the letter 'h'.
+
+Table: worker
+Approach Hints
+Expected Output
+worker
+Preview
+worker_id:
+int
+first_name:
+varchar
+last_name:
+varchar
+salary:
+int
+joining_date:
+datetime
+department:
+varchar
+
+solution:- 
+select * from worker where CHAR_LENGTH(first_name) and right(first_name,1)='h';
