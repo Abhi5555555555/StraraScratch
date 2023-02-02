@@ -391,3 +391,26 @@ varchar
 
 solution:- 
 select * from worker where CHAR_LENGTH(first_name) and right(first_name,1)='h';
+------Q) Find all workers whose first name contains the letter 'a'
+Find all workers whose first name contains the letter 'a'.
+
+Table: worker
+Approach Hints
+Expected Output
+worker
+Preview
+worker_id:
+int
+first_name:
+varchar
+last_name:
+varchar
+salary:
+int
+joining_date:
+datetime
+department:
+varchar
+
+solution:-
+select * from worker where first_name like '%a%';
