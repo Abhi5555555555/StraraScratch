@@ -414,3 +414,28 @@ varchar
 
 solution:-
 select * from worker where first_name like '%a%';
+
+------Q)Find all workers whose first name ends with the letter 'a'
+Find all workers whose first name ends with the letter 'a'.
+
+Table: worker
+Approach Hints
+Expected Output
+worker
+Preview
+worker_id:
+int
+first_name:
+varchar
+last_name:
+varchar
+salary:
+int
+joining_date:
+datetime
+department:
+varchar
+
+solution:-
+select * from worker
+where first_name like ('%a')
